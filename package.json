@@ -1,0 +1,14 @@
+{
+  "name": "async-methods",
+  "scripts": {
+    "start": "node app.js" ,
+    "dev": "npx nodemon app.js" 
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
