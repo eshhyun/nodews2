@@ -1,4 +1,4 @@
-GET http://localhost:3000/api/members/
+GET http://localhost:3000/api/members
 
 ###
 GET http://localhost:3000/api/members?team=engineering
@@ -14,8 +14,7 @@ POST http://localhost:3000/api/members
 Content-Type: application/json
 
  {
-    "id": 11,
-    "name": "Shane",
+    "name": "Wiliam",
     "team": "sales",
     "position": "Sales Staff",
     "emailAddress": "michael@google.com",
@@ -25,20 +24,24 @@ Content-Type: application/json
     "profileImage": "profile11.png"
   }
 ###
-PUT http://localhost:3000/api/members/1
+PUT http://localhost:3000/api/members/5
 Content-Type: application/json
 
- {
-    "id": 1,
-    "name": "Alex",
-    "team": "engineering",
-    "position": "Architect",
-    "emailAddress": "alex@google.com",
-    "phoneNumber": "010-xxxx-xxxx",
-    "admissionDate": "2018/12/10",
-    "birthday": "1994/11/08",
-    "profileImage": "profile1.png"
-  }
-###
-DELETE http://localhost:3000/api/members/1
+{
+    "position": "Marketing Executive"
+}
 
+###
+PUT http://localhost:3000/api/membersSave/100
+Content-Type: application/json
+
+{
+    "position": "Marketing Executive"
+}
+
+###
+DELETE http://localhost:3000/api/members/12
+
+###
+
+DELETE http://localhost:3000/api/membersIns/2
